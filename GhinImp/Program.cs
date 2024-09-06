@@ -17,9 +17,9 @@ foreach (var character in highAttackers)
         $"Character: {character.Name}, Average Attack: {attackCalculator.CalculateAverageAttack(character):F2}");
 }
 
-var sortedCharacters = characterGroup.SortCharactersByName;
+var sortedCharacters = characterGroup.SortCharactersByName();
 
-foreach (var character in sortedCharacters)
+foreach (var character in sortedCharacters) 
 {
     Console.WriteLine($"Character: {character.Name}");
 }
